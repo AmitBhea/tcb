@@ -16,5 +16,4 @@ $sugar_config['full_text_engine']['Elastic']['host'] = 'localhost';
 $sugar_config['full_text_engine']['Elastic']['port'] = '9200';
 $sugar_config['full_text_engine']['Elastic']['valid'] = true;
 $sugar_config['lead_conv_activity_opt'] = 'copy';
-
 /***CONFIGURATOR***/
