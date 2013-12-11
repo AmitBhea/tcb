@@ -1,0 +1,257 @@
+<?php
+$module_name = 'Bhea_Events';
+$viewdefs[$module_name] = 
+array (
+  'base' => 
+  array (
+    'view' => 
+    array (
+      'record' => 
+      array (
+        'panels' => 
+        array (
+          0 => 
+          array (
+            'name' => 'panel_header',
+            'label' => 'LBL_RECORD_HEADER',
+            'header' => true,
+            'fields' => 
+            array (
+              0 => 
+              array (
+                'name' => 'picture',
+                'type' => 'avatar',
+                'width' => 42,
+                'height' => 42,
+                'dismiss_label' => true,
+                'readonly' => true,
+              ),
+              1 => 'name',
+              2 => 
+              array (
+                'name' => 'favorite',
+                'label' => 'LBL_FAVORITE',
+                'type' => 'favorite',
+                'readonly' => true,
+                'dismiss_label' => true,
+              ),
+              3 => 
+              array (
+                'name' => 'follow',
+                'label' => 'LBL_FOLLOW',
+                'type' => 'follow',
+                'readonly' => true,
+                'dismiss_label' => true,
+              ),
+            ),
+          ),
+          1 => 
+          array (
+            'name' => 'panel_body',
+            'label' => 'LBL_RECORD_BODY',
+            'columns' => 2,
+            'labelsOnTop' => true,
+            'placeholders' => true,
+            'fields' => 
+            array (
+              0 => 
+              array (
+                'name' => 'description',
+                'comment' => 'Full text of the note',
+                'label' => 'LBL_DESCRIPTION',
+                'span' => 12,
+              ),
+              1 => 
+              array (
+                'name' => 'event_type',
+                'studio' => 'visible',
+                'label' => 'LBL_EVENT_TYPE ',
+              ),
+              2 => 
+              array (
+                'name' => 'status',
+                'studio' => 'visible',
+                'label' => 'LBL_STATUS',
+              ),
+              3 => 
+              array (
+                'name' => 'conference_status',
+                'studio' => 'visible',
+                'label' => 'LBL_CONFERENCE_STATUS',
+              ),
+              4 => 
+              array (
+                'name' => 'seminar_status',
+                'studio' => 'visible',
+                'label' => 'LBL_SEMINAR_STATUS ',
+              ),
+              5 => 
+              array (
+                'name' => 'begin_date',
+                'label' => 'LBL_BEGIN_DATE ',
+              ),
+              6 => 
+              array (
+                'name' => 'end_date',
+                'label' => 'LBL_END_DATE ',
+              ),
+              7 => 
+              array (
+                'name' => 'knowledge_area',
+                'studio' => 'visible',
+                'label' => 'LBL_KNOWLEDGE_AREA',
+                'span' => 6,
+              ),
+              8 => 
+              array (
+                'span' => 6,
+              ),
+              9 => 
+              array (
+                'name' => 'no_of_tracks',
+                'label' => 'LBL_NO_OF_TRACKS',
+              ),
+              10 => 
+              array (
+                'name' => 'no_of_sessions',
+                'label' => 'LBL_NO_OF_SESSIONS ',
+              ),
+              11 => 
+              array (
+                'name' => 'budgeted_cost',
+                'label' => 'LBL_BUDGETED_COST ',
+              ),
+              12 => 
+              array (
+                'name' => 'sponsorship_target',
+                'label' => 'LBL_SPONSORSHIP_TARGET ',
+              ),
+              13 => 
+              array (
+                'name' => 'expected_no_of_attendees',
+                'label' => 'LBL_EXPECTED_NO_OF_ATTENDEES ',
+              ),
+              14 => 
+              array (
+                'name' => 'attendee_fee_target',
+                'label' => 'LBL_ATTENDEE_FEE_TARGET ',
+              ),
+              15 => 
+              array (
+                'name' => 'conference_fees',
+                'label' => 'LBL_CONFERENCE_FEES ',
+              ),
+              16 => 
+              array (
+                'name' => 'early_bird_discount',
+                'label' => 'LBL_EARLY_BIRD_DISCOUNT',
+              ),
+              17 => 
+              array (
+                'name' => 'early_bird_date',
+                'label' => 'LBL_EARLY_BIRD_DATE ',
+              ),
+              18 => 
+              array (
+                'name' => 'cancellation_fee_date',
+                'label' => 'LBL_CANCELLATION_FEE_DATE ',
+              ),
+              19 => 
+              array (
+                'name' => 'cancellation_fee',
+                'label' => 'LBL_CANCELLATION_FEE',
+              ),
+              20 => 
+              array (
+                'name' => 'non_profit_fee',
+                'label' => 'LBL_NON_PROFIT_FEE',
+              ),
+              21 => 
+              array (
+                'name' => 'academic_fee',
+                'label' => 'LBL_ACADEMIC_FEE',
+              ),
+              22 => 
+              array (
+                'name' => 'government_fee',
+                'label' => 'LBL_GOVERNMENT_FEE',
+              ),
+              23 => 
+              array (
+                'name' => 'corp_member_fee',
+                'label' => 'LBL_CORP_MEMBER_FEE',
+              ),
+              24 => 
+              array (
+                'name' => 'member_non_profit_fee',
+                'label' => 'LBL_MEMBER_NON_PROFIT_FEE',
+              ),
+              25 => 
+              array (
+                'name' => 'member_academic_fee',
+                'label' => 'LBL_MEMBER_ACADEMIC_FEE ',
+              ),
+              26 => 
+              array (
+                'name' => 'member_government_fee',
+                'label' => 'LBL_MEMBER_GOVERNMENT_FEE',
+              ),
+              27 => 'assigned_user_name',
+              28 => 'team_name',
+              29 => 
+              array (
+                'name' => 'date_entered',
+                'comment' => 'Date record created',
+                'studio' => 
+                array (
+                  'portaleditview' => false,
+                ),
+                'readonly' => true,
+                'label' => 'LBL_DATE_ENTERED',
+              ),
+              30 => 
+              array (
+                'name' => 'created_by_name',
+                'readonly' => true,
+                'label' => 'LBL_CREATED',
+              ),
+              31 => 
+              array (
+                'name' => 'date_modified',
+                'comment' => 'Date record last modified',
+                'studio' => 
+                array (
+                  'portaleditview' => false,
+                ),
+                'readonly' => true,
+                'label' => 'LBL_DATE_MODIFIED',
+              ),
+              32 => 
+              array (
+                'name' => 'modified_by_name',
+                'readonly' => true,
+                'label' => 'LBL_MODIFIED_NAME',
+              ),
+              33 => 
+              array (
+                'name' => 'bhea_events_bhea_hotels_1_name',
+              ),
+            ),
+          ),
+        ),
+        'templateMeta' => 
+        array (
+          'useTabs' => false,
+          'tabDefs' => 
+          array (
+            'LBL_RECORD_BODY' => 
+            array (
+              'newTab' => false,
+              'panelDefault' => 'expanded',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+);

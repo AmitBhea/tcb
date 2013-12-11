@@ -1,0 +1,96 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'Bhea_member_levels',
+    'varName' => 'Bhea_member_levels',
+    'orderBy' => 'bhea_member_levels.name',
+    'whereClauses' => array (
+  'name' => 'bhea_member_levels.name',
+),
+    'searchInputs' => array (
+  0 => 'bhea_member_levels_number',
+  1 => 'name',
+  2 => 'priority',
+  3 => 'status',
+),
+    'listviewdefs' => array (
+  'NAME' => 
+  array (
+    'width' => '32%',
+    'label' => 'LBL_NAME',
+    'default' => true,
+    'link' => true,
+    'name' => 'name',
+  ),
+  'MEM_TYPE' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_MEM_TYPE',
+    'width' => '10%',
+  ),
+  'MEM_PERIOD' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_MEM_PERIOD',
+    'width' => '10%',
+  ),
+  'COST' => 
+  array (
+    'type' => 'currency',
+    'label' => 'LBL_COST',
+    'currency_format' => true,
+    'width' => '10%',
+    'default' => true,
+  ),
+  'START_DATE' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_START_DATE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'END_DATE' => 
+  array (
+    'type' => 'date',
+    'label' => 'LBL_END_DATE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'CAT_TYPE' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_CAT_TYPE',
+    'width' => '10%',
+  ),
+  'PRICE_TYPE' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_PRICE_TYPE',
+    'width' => '10%',
+  ),
+  'STATUS' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_STATUS',
+    'width' => '10%',
+  ),
+  'ASSIGNED_USER_NAME' => 
+  array (
+    'width' => '9%',
+    'label' => 'LBL_ASSIGNED_TO_NAME',
+    'module' => 'Employees',
+    'id' => 'ASSIGNED_USER_ID',
+    'default' => true,
+    'name' => 'assigned_user_name',
+  ),
+),
+);

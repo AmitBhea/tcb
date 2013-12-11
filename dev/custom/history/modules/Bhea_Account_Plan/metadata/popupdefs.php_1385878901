@@ -1,0 +1,44 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'Bhea_Account_Plan',
+    'varName' => 'Bhea_Account_Plan',
+    'orderBy' => 'bhea_account_plan.name',
+    'whereClauses' => array (
+  'name' => 'bhea_account_plan.name',
+),
+    'searchInputs' => array (
+  0 => 'bhea_account_plan_number',
+  1 => 'name',
+  2 => 'priority',
+  3 => 'status',
+),
+    'listviewdefs' => array (
+  'NAME' => 
+  array (
+    'width' => '32%',
+    'label' => 'LBL_NAME',
+    'default' => true,
+    'link' => true,
+    'name' => 'name',
+  ),
+  'PLAN_ID' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_PLAN_ID',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'DATE_ENTERED' => 
+  array (
+    'type' => 'datetime',
+    'studio' => 
+    array (
+      'portaleditview' => false,
+    ),
+    'readonly' => true,
+    'label' => 'LBL_DATE_ENTERED',
+    'width' => '10%',
+    'default' => true,
+  ),
+),
+);

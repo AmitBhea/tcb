@@ -1,0 +1,34 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'Bhea_Touch_Points',
+    'varName' => 'Bhea_Touch_Points',
+    'orderBy' => 'bhea_touch_points.name',
+    'whereClauses' => array (
+  'name' => 'bhea_touch_points.name',
+),
+    'searchInputs' => array (
+  0 => 'bhea_touch_points_number',
+  1 => 'name',
+  2 => 'priority',
+  3 => 'status',
+),
+    'listviewdefs' => array (
+  'NAME' => 
+  array (
+    'width' => '20%',
+    'label' => 'LBL_NAME',
+    'default' => true,
+    'link' => true,
+    'name' => 'name',
+  ),
+  'TYPE' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_TYPE',
+    'width' => '10%',
+    'name' => 'type',
+  ),
+),
+);

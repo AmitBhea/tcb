@@ -1,0 +1,77 @@
+<?php
+// created: 2013-12-03 12:03:21
+$viewdefs['Leads']['base']['view']['subpanel-for-accounts'] = array (
+  'panels' => 
+  array (
+    0 => 
+    array (
+      'name' => 'panel_header',
+      'label' => 'LBL_PANEL_1',
+      'fields' => 
+      array (
+        0 => 
+        array (
+          'name' => 'full_name',
+          'type' => 'fullname',
+          'fields' => 
+          array (
+            0 => 'salutation',
+            1 => 'first_name',
+            2 => 'last_name',
+          ),
+          'link' => true,
+          'css_class' => 'full-name',
+          'label' => 'LBL_LIST_NAME',
+          'enabled' => true,
+          'default' => true,
+        ),
+        1 => 
+        array (
+          'name' => 'status',
+          'label' => 'LBL_STATUS',
+          'enabled' => true,
+          'default' => true,
+        ),
+        2 => 
+        array (
+          'name' => 'lead_source',
+          'label' => 'LBL_LEAD_SOURCE',
+          'enabled' => true,
+          'default' => true,
+        ),
+        3 => 
+        array (
+          'name' => 'opportunity_name',
+          'label' => 'LBL_OPPORTUNITY_NAME',
+          'enabled' => true,
+          'default' => true,
+        ),
+        4 => 
+        array (
+          'name' => 'opportunity_amount',
+          'label' => 'LBL_OPPORTUNITY_AMOUNT',
+          'enabled' => true,
+          'default' => true,
+        ),
+        5 => 
+        array (
+          'name' => 'opportunity_date_c',
+          'label' => 'LBL_OPPORTUNITY_DATE',
+          'enabled' => true,
+          'default' => true,
+        ),
+        6 => 
+        array (
+          'name' => 'campaign_name',
+          'label' => 'LBL_CAMPAIGN',
+          'enabled' => true,
+          'id' => 'CAMPAIGN_ID',
+          'link' => true,
+          'sortable' => false,
+          'default' => true,
+        ),
+      ),
+    ),
+  ),
+  'type' => 'subpanel-list',
+);

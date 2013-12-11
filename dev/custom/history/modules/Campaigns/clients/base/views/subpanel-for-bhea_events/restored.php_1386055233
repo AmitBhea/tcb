@@ -1,0 +1,30 @@
+<?php
+// created: 2013-12-03 12:50:28
+$viewdefs['Campaigns']['base']['view']['subpanel-for-bhea_events'] = array (
+  'panels' => 
+  array (
+    0 => 
+    array (
+      'name' => 'panel_header',
+      'label' => 'LBL_PANEL_1',
+      'fields' => 
+      array (
+        0 => 
+        array (
+          'name' => 'name',
+          'label' => 'LBL_LIST_CAMPAIGN_NAME',
+          'enabled' => true,
+          'default' => true,
+          'link' => true,
+        ),
+        1 => 
+        array (
+          'name' => 'status',
+          'label' => 'LBL_LIST_STATUS',
+          'enabled' => true,
+          'default' => true,
+        ),
+      ),
+    ),
+  ),
+);

@@ -1,0 +1,152 @@
+<?php
+$module_name = 'Bhea_Hotels';
+$viewdefs[$module_name] = 
+array (
+  'base' => 
+  array (
+    'view' => 
+    array (
+      'record' => 
+      array (
+        'panels' => 
+        array (
+          0 => 
+          array (
+            'name' => 'panel_header',
+            'label' => 'LBL_RECORD_HEADER',
+            'header' => true,
+            'fields' => 
+            array (
+              0 => 
+              array (
+                'name' => 'picture',
+                'type' => 'avatar',
+                'width' => 42,
+                'height' => 42,
+                'dismiss_label' => true,
+                'readonly' => true,
+              ),
+              1 => 'name',
+              2 => 
+              array (
+                'name' => 'favorite',
+                'label' => 'LBL_FAVORITE',
+                'type' => 'favorite',
+                'readonly' => true,
+                'dismiss_label' => true,
+              ),
+              3 => 
+              array (
+                'name' => 'follow',
+                'label' => 'LBL_FOLLOW',
+                'type' => 'follow',
+                'readonly' => true,
+                'dismiss_label' => true,
+              ),
+            ),
+          ),
+          1 => 
+          array (
+            'name' => 'panel_body',
+            'label' => 'LBL_RECORD_BODY',
+            'columns' => 2,
+            'labelsOnTop' => true,
+            'placeholders' => true,
+            'fields' => 
+            array (
+              0 => 
+              array (
+                'name' => 'type',
+                'studio' => 'visible',
+                'label' => 'LBL_TYPE',
+              ),
+              1 => 
+              array (
+                'name' => 'standard',
+                'studio' => 'visible',
+                'label' => 'LBL_STANDARD',
+                'span' => 6,
+              ),
+              2 => 
+              array (
+                'span' => 6,
+              ),
+              3 => 
+              array (
+                'span' => 6,
+              ),
+              4 => 
+              array (
+                'span' => 6,
+              ),
+              5 => 
+              array (
+                'span' => 6,
+              ),
+              6 => 
+              array (
+                'span' => 6,
+              ),
+              7 => 
+              array (
+                'span' => 6,
+              ),
+              8 => 
+              array (
+                'name' => 'date_entered',
+                'comment' => 'Date record created',
+                'studio' => 
+                array (
+                  'portaleditview' => false,
+                ),
+                'readonly' => true,
+                'label' => 'LBL_DATE_ENTERED',
+              ),
+              9 => 
+              array (
+                'name' => 'created_by_name',
+                'readonly' => true,
+                'label' => 'LBL_CREATED',
+              ),
+              10 => 
+              array (
+                'name' => 'date_modified',
+                'comment' => 'Date record last modified',
+                'studio' => 
+                array (
+                  'portaleditview' => false,
+                ),
+                'readonly' => true,
+                'label' => 'LBL_DATE_MODIFIED',
+              ),
+              11 => 
+              array (
+                'name' => 'modified_by_name',
+                'readonly' => true,
+                'label' => 'LBL_MODIFIED_NAME',
+              ),
+              12 => 'assigned_user_name',
+              13 => 'team_name',
+              14 => 
+              array (
+                'name' => 'bhea_events_bhea_hotels_1_name',
+              ),
+            ),
+          ),
+        ),
+        'templateMeta' => 
+        array (
+          'useTabs' => false,
+          'tabDefs' => 
+          array (
+            'LBL_RECORD_BODY' => 
+            array (
+              'newTab' => false,
+              'panelDefault' => 'expanded',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+);
